@@ -52,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
         Spinner jmh_origen = (Spinner) findViewById(R.id.spinnerjmh);
         //Inflamos los valores del spinner usando el adaptador
         jmh_origen.setAdapter(jmh_adapter1);
-
-
     }
 
     public void LlamadaAdaptadorPropioListView(View view) {

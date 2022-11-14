@@ -25,13 +25,16 @@ public class CoinAdapter extends ArrayAdapter<Coin> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Coin coin = this.getItem(position);
 
+        //Inflamos el layout
         if(convertView == null) {
             convertView = LayoutInflater.from(this.getContext()).inflate(R.layout.coin_item, parent, false);
         }
 
+        //Cogemos los campos del layout
         TextView tvCoinName = (TextView) convertView.findViewById(R.id.tvCoinName);
         TextView tvRatio = (TextView) convertView.findViewById(R.id.tvRatio);
 
+        //Asignamos los valores al layout.
         tvCoinName.setText(coin.name);
         tvRatio.setText(coin.ratio);
 

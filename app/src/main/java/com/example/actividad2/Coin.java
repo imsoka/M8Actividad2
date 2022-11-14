@@ -8,12 +8,5 @@ public class Coin {
     public Coin(String name, String ratio) {
         this.name = name;
         this.ratio = ratio;
-
-        StringBuilder image = new StringBuilder();
-
-        image.append(this.name);
-        image.append(".png");
-
-        this.image = image.toString();
     }
 }

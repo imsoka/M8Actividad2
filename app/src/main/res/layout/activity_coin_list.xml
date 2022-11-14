@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".CoinListActivity">
 
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="73dp"
+        android:layout_height="41dp"
+        android:text="Error"
+        android:textSize="32dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listViewCoins" />
+
     <ListView
         android:id="@+id/listViewCoins"
         android:layout_width="match_parent"
@@ -15,5 +27,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0">
+
+    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>
